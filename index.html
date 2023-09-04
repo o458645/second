@@ -1,18 +1,16 @@
-
-
 <form id="form1" name="form1" method="post" action="code.php">
-<table width="500" border="0" cellspacing="2" cellpadding="2">
-<tr>
-<td><label>query:
-<input name="query" type="text" id="query" size="100" valuse="<?=$_POST[query]?>"/>
-<br />
-<br />
-<font size="2">ex:<strong> http://www.google.com/search?hl=en&q=inurl%3A%22article.php%3Fid%3D%22&btnG=Google+Search</strong></font></label></td>
-</tr> <tr>
-<td><label>
-<input type="submit" name="button" id="button" value="Submit" />
-</label></td>
-</tr>
-</table>
+  <table width="500" border="0" cellspacing="2" cellpadding="2">
+    <tr>
+      <td><label>query:
+          <input name="query" type="text" id="query" size="100" value="<?= isset($_POST['query']) ? $_POST['query'] : '' ?>" />
+          <br />
+          <br />
+          <font size="2"><strong>ex: http://www.google.com/search?hl=en&q=inurl%3A%22article.php%3Fid%3D%22&btnG=Google+Search</strong></font></label></td>
+    </tr>
+    <tr>
+      <td><label>
+          <input type="submit" name="button" id="button" value="Submit" />
+        </label></td>
+    </tr>
+  </table>
 </form>
-
