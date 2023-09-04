@@ -1,4 +1,4 @@
-
+<?php if(!function_exists("curl_init")) exit("CURL REQUIRED"); ?>
 <?php
 if (!empty($_POST['query'])) {
     @set_time_limit(0);
